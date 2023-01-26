@@ -26,58 +26,84 @@ class _ChatPageState extends State<ChatPage> {
   TextEditingController messageController = TextEditingController();
   String admin = "";
 
-  //edit here
+  //edit checklist here
   List<Map> myChecklist = [
-    // {"name": "--PROCEDURE--", "isChecked": false},
-    // {"name": "Epidermal Cyst Excision", "isChecked": false},
-    // {"name": "Pilar cyst Excision", "isChecked": false},
-    // {"name": "Lipoma Excision", "isChecked": false},
-    // {"name": "--SITE--", "isChecked": false},
-    // {"name": "Scalp", "isChecked": false},
-    // {"name": "Chest/Abdomen", "isChecked": false},
-    // {"name": "Back", "isChecked": false},
-    // {"name": "Upper Extremity", "isChecked": false},
-    // {"name": "Lower Extremity", "isChecked": false},
-    // {"name": "--Scalpel--", "isChecked": false},
-    // {"name": "15-Blade", "isChecked": false},
-    // {"name": "11-Blade", "isChecked": false},
-    // {"name": "10-Blade", "isChecked": false},
-    // {"name": "--Top Suture--", "isChecked": false},
-    // {"name": "3-0 Prolene (Polypropylene)", "isChecked": false},
-    // {"name": "4-0 Prolene (Polypropylene)", "isChecked": false},
-    // {"name": "5-0 Prolene (Polypropylene)", "isChecked": false},
-    // {"name": "5-0 Fast Gut", "isChecked": false},
-    // {"name": "--Deep Suture--", "isChecked": false},
-    // {"name": "None", "isChecked": false},
-    // {"name": "3-0 Vicryl (Polyglactin 910)", "isChecked": false},
-    // {"name": "4-0 Vicryl (Polyglactin 910)", "isChecked": false},
-    // {"name": "5-0 Vicryl (Polyglactin 910)", "isChecked": false},
-    // {"name": "3-0 Monocryl (Poliglecaprone 25)", "isChecked": false},
-    // {"name": "4-0 Monocryl (Poliglecaprone 25)", "isChecked": false},
-    // {"name": "5-0 Monocryl (Poliglecaprone 25)", "isChecked": false},
-    // {"name": "--Tools--", "isChecked": false},
-    // {"name": "Needle Driver", "isChecked": false},
-    // {"name": "Adson Tissue Forceps", "isChecked": false},
-    // {"name": "Bishop-Harmon Forceps", "isChecked": false},
-    // {"name": "Iris Scissors", "isChecked": false},
-    // {"name": "Wescott/Castroviejo Scissors", "isChecked": false},
-    // {"name": "Undermining Scissors", "isChecked": false},
-    // {"name": "Hemostat", "isChecked": false},
-    // {"name": "Skin Hooks", "isChecked": false},
-    // {"name": "--Patient Position--", "isChecked": false},
-    // {"name": "Supine", "isChecked": false},
-    // {"name": "Prone", "isChecked": false},
-    // {"name": "Trendelenburg", "isChecked": false},
-    // {"name": "Reverse Trendelenburg", "isChecked": false},
-    // {"name": "On left side", "isChecked": false},
-    // {"name": "On right side ", "isChecked": false},
-    // {"name": "--Top Stiches--", "isChecked": false},
-    // {"name": "Simple Interrupted", "isChecked": false},
-    // {"name": "Simple Running", "isChecked": false},
-    // {"name": "Horizontal Mattress", "isChecked": false},
-    // {"name": "Vertical Mattress", "isChecked": false},
-    {"name": "a", "isChecked": false, "title": true},
-    {"name": "b", "isChecked": false, "title": false},
+    {"name": "--PROCEDURE--", "isChecked": false, "title": true},
+    {"name": "Epidermal Cyst Excision", "isChecked": false, "title": false},
+    {"name": "Pilar cyst Excision", "isChecked": false, "title": false},
+    {"name": "Lipoma Excision", "isChecked": false, "title": false},
+    {"name": "--SITE--", "isChecked": false, "title": true},
+    {"name": "Scalp", "isChecked": false, "title": false},
+    {"name": "Chest/Abdomen", "isChecked": false, "title": false},
+    {"name": "Back", "isChecked": false, "title": false},
+    {"name": "Upper Extremity", "isChecked": false, "title": false},
+    {"name": "Lower Extremity", "isChecked": false, "title": false},
+    {"name": "--Scalpel--", "isChecked": false, "title": true},
+    {"name": "15-Blade", "isChecked": false, "title": false},
+    {"name": "11-Blade", "isChecked": false, "title": false},
+    {"name": "10-Blade", "isChecked": false, "title": false},
+    {"name": "--Top Suture--", "isChecked": false, "title": true},
+    {"name": "3-0 Prolene (Polypropylene)", "isChecked": false, "title": false},
+    {"name": "4-0 Prolene (Polypropylene)", "isChecked": false, "title": false},
+    {"name": "5-0 Prolene (Polypropylene)", "isChecked": false, "title": false},
+    {"name": "5-0 Fast Gut", "isChecked": false, "title": false},
+    {"name": "--Deep Suture--", "isChecked": false, "title": true},
+    {"name": "None", "isChecked": false, "title": false},
+    {
+      "name": "3-0 Vicryl (Polyglactin 910)",
+      "isChecked": false,
+      "title": false
+    },
+    {
+      "name": "4-0 Vicryl (Polyglactin 910)",
+      "isChecked": false,
+      "title": false
+    },
+    {
+      "name": "5-0 Vicryl (Polyglactin 910)",
+      "isChecked": false,
+      "title": false
+    },
+    {
+      "name": "3-0 Monocryl (Poliglecaprone 25)",
+      "isChecked": false,
+      "title": false
+    },
+    {
+      "name": "4-0 Monocryl (Poliglecaprone 25)",
+      "isChecked": false,
+      "title": false
+    },
+    {
+      "name": "5-0 Monocryl (Poliglecaprone 25)",
+      "isChecked": false,
+      "title": false
+    },
+    {"name": "--Tools--", "isChecked": false, "title": true},
+    {"name": "Needle Driver", "isChecked": false, "title": false},
+    {"name": "Adson Tissue Forceps", "isChecked": false, "title": false},
+    {"name": "Bishop-Harmon Forceps", "isChecked": false, "title": false},
+    {"name": "Iris Scissors", "isChecked": false, "title": false},
+    {
+      "name": "Wescott/Castroviejo Scissors",
+      "isChecked": false,
+      "title": false
+    },
+    {"name": "Undermining Scissors", "isChecked": false, "title": false},
+    {"name": "Hemostat", "isChecked": false, "title": false},
+    {"name": "Skin Hooks", "isChecked": false, "title": false},
+    {"name": "--Patient Position--", "isChecked": false, "title": true},
+    {"name": "Supine", "isChecked": false, "title": false},
+    {"name": "Prone", "isChecked": false, "title": false},
+    {"name": "Trendelenburg", "isChecked": false, "title": false},
+    {"name": "Reverse Trendelenburg", "isChecked": false, "title": false},
+    {"name": "On left side", "isChecked": false, "title": false},
+    {"name": "On right side ", "isChecked": false, "title": false},
+    {"name": "--Top Stiches--", "isChecked": false, "title": true},
+    {"name": "Simple Interrupted", "isChecked": false, "title": false},
+    {"name": "Simple Running", "isChecked": false, "title": false},
+    {"name": "Horizontal Mattress", "isChecked": false, "title": false},
+    {"name": "Vertical Mattress", "isChecked": false, "title": false},
   ];
 
   String timestamp = "";
@@ -237,7 +263,9 @@ class _ChatPageState extends State<ChatPage> {
                   value: favorite['isChecked'],
                   onChanged: (val) {
                     setState(() {
-                      favorite['isChecked'] = val;
+                      if (favorite['title'] == false) {
+                        favorite['isChecked'] = val;
+                      }
                     });
                   }),
             );
