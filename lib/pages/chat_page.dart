@@ -28,26 +28,26 @@ class _ChatPageState extends State<ChatPage> {
 
   //edit checklist here
   List<Map> myChecklist = [
-    {"name": "--PROCEDURE--", "isChecked": false, "title": true},
+    {"name": "PROCEDURE", "isChecked": false, "title": true},
     {"name": "Epidermal Cyst Excision", "isChecked": false, "title": false},
     {"name": "Pilar cyst Excision", "isChecked": false, "title": false},
     {"name": "Lipoma Excision", "isChecked": false, "title": false},
-    {"name": "--SITE--", "isChecked": false, "title": true},
+    {"name": "SITE", "isChecked": false, "title": true},
     {"name": "Scalp", "isChecked": false, "title": false},
     {"name": "Chest/Abdomen", "isChecked": false, "title": false},
     {"name": "Back", "isChecked": false, "title": false},
     {"name": "Upper Extremity", "isChecked": false, "title": false},
     {"name": "Lower Extremity", "isChecked": false, "title": false},
-    {"name": "--Scalpel--", "isChecked": false, "title": true},
+    {"name": "SCALPEL", "isChecked": false, "title": true},
     {"name": "15-Blade", "isChecked": false, "title": false},
     {"name": "11-Blade", "isChecked": false, "title": false},
     {"name": "10-Blade", "isChecked": false, "title": false},
-    {"name": "--Top Suture--", "isChecked": false, "title": true},
+    {"name": "TOP SUTURE", "isChecked": false, "title": true},
     {"name": "3-0 Prolene (Polypropylene)", "isChecked": false, "title": false},
     {"name": "4-0 Prolene (Polypropylene)", "isChecked": false, "title": false},
     {"name": "5-0 Prolene (Polypropylene)", "isChecked": false, "title": false},
     {"name": "5-0 Fast Gut", "isChecked": false, "title": false},
-    {"name": "--Deep Suture--", "isChecked": false, "title": true},
+    {"name": "DEEP SUTURE", "isChecked": false, "title": true},
     {"name": "None", "isChecked": false, "title": false},
     {
       "name": "3-0 Vicryl (Polyglactin 910)",
@@ -79,7 +79,7 @@ class _ChatPageState extends State<ChatPage> {
       "isChecked": false,
       "title": false
     },
-    {"name": "--Tools--", "isChecked": false, "title": true},
+    {"name": "TOOLS", "isChecked": false, "title": true},
     {"name": "Needle Driver", "isChecked": false, "title": false},
     {"name": "Adson Tissue Forceps", "isChecked": false, "title": false},
     {"name": "Bishop-Harmon Forceps", "isChecked": false, "title": false},
@@ -92,14 +92,14 @@ class _ChatPageState extends State<ChatPage> {
     {"name": "Undermining Scissors", "isChecked": false, "title": false},
     {"name": "Hemostat", "isChecked": false, "title": false},
     {"name": "Skin Hooks", "isChecked": false, "title": false},
-    {"name": "--Patient Position--", "isChecked": false, "title": true},
+    {"name": "PATIENT POSITION", "isChecked": false, "title": true},
     {"name": "Supine", "isChecked": false, "title": false},
     {"name": "Prone", "isChecked": false, "title": false},
     {"name": "Trendelenburg", "isChecked": false, "title": false},
     {"name": "Reverse Trendelenburg", "isChecked": false, "title": false},
     {"name": "On left side", "isChecked": false, "title": false},
     {"name": "On right side ", "isChecked": false, "title": false},
-    {"name": "--Top Stiches--", "isChecked": false, "title": true},
+    {"name": "TOP STITCHES", "isChecked": false, "title": true},
     {"name": "Simple Interrupted", "isChecked": false, "title": false},
     {"name": "Simple Running", "isChecked": false, "title": false},
     {"name": "Horizontal Mattress", "isChecked": false, "title": false},
@@ -247,7 +247,7 @@ class _ChatPageState extends State<ChatPage> {
       constraints: const BoxConstraints(maxHeight: 345),
       child: SingleChildScrollView(
         child: Column(children: [
-          const Text("Select Procedures", style: TextStyle(fontSize: 15)),
+          const Text("Pre-operative Checklist", style: TextStyle(fontSize: 15)),
           Column(
               children: myChecklist.map((favorite) {
             return Theme(
