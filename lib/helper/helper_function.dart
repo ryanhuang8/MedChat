@@ -6,7 +6,6 @@ class HelperFunctions {
   static String userNameKey = "USERNAMEKEY";
   static String userEmailKey = "USEREMAILKEY";
   static String timestamp = "TIMESTAMP";
-  static List checklist = [];
 
   //saving user data
   static Future<bool> saveUserLoggedInStatus(bool isUserLoggedIn) async {
