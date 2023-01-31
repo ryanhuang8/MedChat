@@ -9,7 +9,7 @@ For first-time Flutter users:
 - [Flutter Installation](https://docs.flutter.dev/get-started/install)
 - [Flutter Documentation](https://docs.flutter.dev/)
 
-To deploy of web (chrome):
+To deploy on web (chrome):
 
 ```console
 cd MedChat
