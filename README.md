@@ -10,4 +10,8 @@ For first-time Flutter users:
 - [Flutter Documentation](https://docs.flutter.dev/)
 
 To deploy of web (chrome):
-cd a
+
+```console
+cd MedChat
+Flutter run -d chrome
+```
