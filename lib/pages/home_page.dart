@@ -297,14 +297,14 @@ class _HomePageState extends State<HomePage> {
                             enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                     color: Theme.of(context).primaryColor),
-                                borderRadius: BorderRadius.circular(20)),
+                                borderRadius: BorderRadius.circular(25)),
                             errorBorder: OutlineInputBorder(
                                 borderSide: const BorderSide(color: Colors.red),
-                                borderRadius: BorderRadius.circular(20)),
+                                borderRadius: BorderRadius.circular(25)),
                             focusedBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                     color: Theme.of(context).primaryColor),
-                                borderRadius: BorderRadius.circular(20)),
+                                borderRadius: BorderRadius.circular(25)),
                           ),
                         ),
                 ],
